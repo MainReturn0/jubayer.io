@@ -432,25 +432,29 @@
         font-weight: 600;
         letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: #000;
+        color: var(--text-tertiary);
         margin-bottom: 1rem;
       }
-
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
       .skill-tag {
         font-size: 0.82rem;
         font-weight: 500;
         padding: 5px 12px;
         border-radius: 980px;
-        background: #fff;
-        color: #000;
-        border: 1px solid #000;
+        background: var(--bg);
+        color: var(--text-primary);
+        border: 1px solid var(--border);
+      }
+      .skill-tag.accent {
+        background: rgba(0, 113, 227, 0.08);
+        color: var(--accent);
+        border-color: rgba(0, 113, 227, 0.2);
       }
 
-      .skill-tag.accent {
-        background: #fff;
-        color: #000;
-        border: 1px solid #000;
-      }
       /* ─── PROJECTS ─── */
       #projects {
         background: #f5f5f7;
